@@ -1,0 +1,78 @@
+"ETHERCHANNEL"
+"STATIC"
+ 
+switch0:  
+en
+Conft
+
+int range fa0/1-4
+channel-group 1 mode on 
+ex
+
+do sh etherchannel summary
+
+int pol
+Switchport mode trunk.
+ex
+
+Enter the same commands for switch1
+
+
+        "PAgP"
+switch0:
+en
+Conft
+
+int range fa0/1-4
+channel-group 1 mode auto 
+ex
+
+do sh etherchannel summary
+
+int pol
+Switchport mode trunk.
+ex
+
+  switch1:
+en
+Conft
+
+int range fa0/1-4
+channel-group 1 mode desirable
+ex
+
+do sh etherchannel summary
+
+int pol
+Switchport mode trunk.
+ex
+
+      "LACP"
+  
+switch0:
+en
+Conft
+
+int range fa0/1-4
+channel-group 1 mode active
+ex
+
+do sh etherchannel summary
+
+int pol
+Switchport mode trunk.
+ex
+
+  switch1:
+en
+Conft
+
+int range fa0/1-4
+channel-group 1 mode passive
+ex
+
+do sh etherchannel summary
+
+int pol
+Switchport mode trunk.
+ex
