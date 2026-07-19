@@ -1,5 +1,5 @@
-"ETHERCHANNEL"
-"STATIC"
+              "ETHERCHANNEL"
+                 "STATIC"
  
 switch0:  
 en
@@ -18,7 +18,8 @@ ex
 Enter the same commands for switch1
 
 
-        "PAgP"
+       
+                "PAgP"
 switch0:
 en
 Conft
@@ -33,7 +34,7 @@ int pol
 Switchport mode trunk.
 ex
 
-  switch1:
+switch1:
 en
 Conft
 
@@ -47,7 +48,8 @@ int pol
 Switchport mode trunk.
 ex
 
-      "LACP"
+      
+            "LACP"
   
 switch0:
 en
@@ -63,7 +65,7 @@ int pol
 Switchport mode trunk.
 ex
 
-  switch1:
+switch1:
 en
 Conft
 
